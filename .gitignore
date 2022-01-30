@@ -4,6 +4,7 @@
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
+/.idea/sonarlint
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
@@ -13,6 +14,8 @@
 /buildSrc/.gradle
 /stand-gradle-plugin/build
 /stand-gradle-plugin/.gradle
+/app/src/androidTest
+/app/src/test
 /build
 /captures
 .externalNativeBuild
