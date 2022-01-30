@@ -1,0 +1,38 @@
+apply plugin: 'kotlin'
+apply plugin: 'java-gradle-plugin'
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // 因为使用的 Kotlin 需要需要添加 Kotlin 插件
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+//本地依赖插件时使用
+gradlePlugin {
+    plugins {
+        //插件名,每一个插件都可以有
+        routerPlugin {
+            id = 'com.petterp.gradle.buildSrc'
+            implementationClass = 'com.petterp.gradle.BuildSrcGradlePlugin'
+        }
+        //第二个插件
+//        test2Plugin {
+//            id = xxx
+//            implementationClass = xxx
+//        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10"
+}
+

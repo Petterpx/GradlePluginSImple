@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+    }
+}
+//手动导入插件 ， apply false代表此插件仅应用于构建中的部分或全部子model, 而不是root项目
+//如果要在项目中手动使用独立项目定义的插件,需要在这里进入导入
+//plugins {
+//    id "com.petterp.router.standard" apply false
+//}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
