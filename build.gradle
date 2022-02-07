@@ -7,6 +7,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.4'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+        classpath 'com.github.Petterpx:GradlePluginSImple:1.0.0'
     }
 }
 //手动导入插件 ， apply false代表此插件仅应用于构建中的部分或全部子model, 而不是root项目
