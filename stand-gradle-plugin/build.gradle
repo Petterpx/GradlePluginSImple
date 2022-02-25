@@ -45,8 +45,8 @@ sourceCompatibility = JavaVersion.VERSION_11
 publishing {
     publications {
         maven(MavenPublication) {
-            //最终的插件id
-            artifactId = 'com.petterp.gradle.plugin'
+            //插件名称
+            artifactId = 'stand_plugin'
             from components.java
         }
     }

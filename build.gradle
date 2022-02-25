@@ -7,13 +7,16 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.4'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
-        classpath 'com.github.Petterpx:GradlePluginSImple:1.0.0'
+        //这里是测试最终jitpack生成的插件,你可以根据你的需要测试自己的插件
+//        classpath 'com.github.Petterpx:GradlePluginSImple:1.0.0'
     }
 }
-//手动导入插件 ， apply false代表此插件仅应用于构建中的部分或全部子model, 而不是root项目
+
+//方式3, 如果要测试本地插件,记得在这里打开下面的开关，手动导入插件
+//apply false代表此插件仅应用于构建中的部分或全部子model, 而不是root项目
 //如果要在项目中手动使用独立项目定义的插件,需要在这里进入导入
 //plugins {
-//    id "com.petterp.router.standard" apply false
+//    id "com.petterp.gradle.stand" apply false
 //}
 
 

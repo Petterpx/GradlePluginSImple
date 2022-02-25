@@ -19,5 +19,5 @@ rootProject.name = "GradlePluginSimple"
 include ':app'
 include ':stand-gradle-plugin'
 
-//本地使用stand时可以这样测试
+//本地使用方式3-stand 时可以打开下面的开关，然后调整根build.gradle-plugin部分代码块，即可导入相应插件
 //includeBuild('stand-gradle-plugin')
